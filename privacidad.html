@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de privacidad — Deuda Clara</title>
+    <meta
+      name="description"
+      content="Qué datos usa Deuda Clara, dónde se guardan y cómo ejercer tus derechos. Tus datos financieros viven en tu teléfono; Supabase solo gestiona el acceso por correo."
+    />
+    <meta name="author" content="Deuda Clara" />
+    <meta name="theme-color" content="#07110F" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Deuda Clara" />
+    <meta property="og:title" content="Política de privacidad — Deuda Clara" />
+    <meta
+      property="og:description"
+      content="Tus datos financieros viven en tu teléfono. Supabase solo gestiona el acceso por correo. Aquí está la letra pequeña, en simple."
+    />
+    <meta property="og:image" content="assets/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-serif-italic-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        try {
+          var saved = localStorage.getItem("deuda-clara-theme");
+          var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          root.dataset.theme =
+            saved === "light" || saved === "dark" ? saved : preferred;
+        } catch (error) {
+          root.dataset.theme = "light";
+        }
+        root.classList.add("js");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="sr-only"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <symbol
+          id="i-arrow-right"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.9"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="m13 6 6 6-6 6" />
+        </symbol>
+        <symbol
+          id="i-chevron-right"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </symbol>
+        <symbol id="i-android" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.523 15.341c-.551 0-.999-.449-.999-1s.448-1 .999-1 1 .449 1 1-.449 1-1 1m-11.046 0c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1m11.405-6.02 1.997-3.46a.416.416 0 0 0-.152-.567.416.416 0 0 0-.568.152l-2.022 3.503C15.59 8.244 13.853 7.851 12 7.851s-3.59.393-5.137 1.099L4.841 5.446a.416.416 0 0 0-.568-.152.416.416 0 0 0-.152.567l1.997 3.46C2.689 11.187.343 14.659 0 18.761h24c-.343-4.102-2.689-7.574-6.118-9.44"
+          />
+        </symbol>
+        <symbol
+          id="i-sun"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.9 4.9 1.4 1.4" />
+          <path d="m17.7 17.7 1.4 1.4" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.3 17.7-1.4 1.4" />
+          <path d="m19.1 4.9-1.4 1.4" />
+        </symbol>
+        <symbol
+          id="i-moon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+        </symbol>
+        <symbol
+          id="i-shield"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 3 4.8 6v5.3c0 4.5 3.1 7.7 7.2 9.3 4.1-1.6 7.2-4.8 7.2-9.3V6L12 3Z" />
+          <path d="m9.1 11.9 2 2 3.8-4" />
+        </symbol>
+        <symbol
+          id="i-mail"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+          <path d="m3 6 9 7 9-7" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a class="brand" href="./" aria-label="Deuda Clara, ir al inicio">
+          <img src="assets/icon-192.png" alt="" width="192" height="192" />
+          <span class="brand-copy">
+            Deuda Clara
+            <small>Finanzas sin ruido</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./#funciones">Funciones</a>
+          <a href="./#como-funciona">Cómo funciona</a>
+          <a href="./#privacidad">Privacidad</a>
+          <a href="./#preguntas">Preguntas</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Cambiar a modo oscuro"
+            title="Cambiar tema"
+          >
+            <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+            <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          </button>
+          <a class="header-cta" href="./#descargar">
+            <svg class="icon" aria-hidden="true"><use href="#i-android"></use></svg>
+            Descargar
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="menu-movil"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="menu-movil" aria-label="Navegación móvil">
+        <a href="./#funciones">Funciones <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        <a href="./#como-funciona">Cómo funciona <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        <a href="./#privacidad">Privacidad <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        <a href="./#preguntas">Preguntas <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        <a class="btn btn-primary" href="./#descargar">
+          <svg class="icon" aria-hidden="true"><use href="#i-android"></use></svg>
+          Descargar para Android
+        </a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="legal-hero">
+        <div class="container">
+          <nav class="legal-breadcrumb" aria-label="Migas de pan">
+            <a href="./">Inicio</a>
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+            <span>Privacidad</span>
+          </nav>
+          <h1>Tus datos, en <em>simple.</em></h1>
+          <p>
+            Qué guarda Deuda Clara, qué pasa por Supabase y qué puedes hacer
+            para controlar tu información. Sin letra menuda innecesaria.
+          </p>
+          <span class="legal-updated">
+            <span class="dot"></span>
+            Última actualización:
+            <time datetime="2026-11-06">6 de noviembre de 2026</time>
+          </span>
+        </div>
+      </section>
+
+      <div class="legal-main">
+        <div class="container legal-layout">
+          <nav class="legal-toc" aria-label="Contenido de la política">
+            <h2>En esta página</h2>
+            <ol>
+              <li><a href="#responsable">Quiénes somos</a></li>
+              <li><a href="#datos">Qué datos tratamos</a></li>
+              <li><a href="#donde">Dónde se guardan</a></li>
+              <li><a href="#finalidades">Para qué los usamos</a></li>
+              <li><a href="#terceros">Terceros</a></li>
+              <li><a href="#seguridad">Seguridad</a></li>
+              <li><a href="#conservacion">Conservación</a></li>
+              <li><a href="#derechos">Tus derechos</a></li>
+              <li><a href="#menores">Menores de edad</a></li>
+              <li><a href="#cambios">Cambios</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ol>
+          </nav>
+
+          <article class="legal-content">
+            <div class="legal-summary">
+              <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
+              <p>
+                <strong>En resumen:</strong> tu correo se usa para darte acceso.
+                Tus deudas, ingresos, gastos y pagos se guardan en tu teléfono y
+                no se envían a la nube en esta versión. No vendemos datos ni
+                mostramos publicidad.
+              </p>
+            </div>
+
+            <section id="responsable">
+              <h2>1. Quiénes somos</h2>
+              <p>
+                Deuda Clara es un proyecto independiente de software para
+                organizar finanzas personales en Colombia. Esta política aplica
+                a la aplicación Android de Deuda Clara y a este sitio web.
+              </p>
+              <p>
+                Para efectos de la Ley 1581 de 2012 y el Decreto 1377 de 2013,
+                el responsable del tratamiento de los datos descritos aquí es
+                el desarrollador de Deuda Clara. El canal de contacto se indica
+                en la <a href="#contacto">sección final</a>.
+              </p>
+            </section>
+
+            <section id="datos">
+              <h2>2. Qué datos tratamos</h2>
+              <h3>Datos de acceso</h3>
+              <ul>
+                <li>
+                  <strong>Correo electrónico</strong> que escribes para recibir
+                  el código de 6 dígitos.
+                </li>
+                <li>
+                  <strong>Identificador de usuario de Supabase</strong> y datos
+                  técnicos de la sesión (tokens de acceso y renovación).
+                </li>
+                <li>
+                  Metadatos técnicos que Supabase pueda registrar para operar el
+                  servicio de autenticación, como fecha de creación del usuario
+                  o registros de seguridad.
+                </li>
+              </ul>
+
+              <h3>Datos financieros (solo en tu dispositivo)</h3>
+              <p>
+                Cuando usas la app, se guardan localmente el nombre o alias que
+                decidas usar, tu ingreso mensual, tu estrategia de pago, tus
+                deudas (saldo, tasa, cuota y notas), tus ingresos, gastos y
+                pagos. Esta información se almacena en la base SQLite de la app
+                y no se transmite a Deuda Clara ni a Supabase en esta versión.
+              </p>
+
+              <h3>Datos del sitio web</h3>
+              <p>
+                Este sitio es estático. No tiene formularios de registro, no usa
+                Google Analytics ni píxeles publicitarios, y no usa cookies de
+                seguimiento. Solo guardamos tu preferencia de tema (claro u
+                oscuro) en el almacenamiento local del navegador.
+              </p>
+              <p>
+                El proveedor de hosting puede registrar datos técnicos estándar
+                de las visitas, como dirección IP, tipo de navegador, URL
+                solicitada y fecha, con fines de seguridad y operación.
+              </p>
+
+              <h3>Datos que no recopilamos</h3>
+              <ul>
+                <li>Credenciales bancarias, números de cuenta o claves de tu banco.</li>
+                <li>Números completos de tarjetas de crédito o débito.</li>
+                <li>Contactos, ubicación, cámara, micrófono o mensajes.</li>
+                <li>Datos de salud, ideología o cualquier categoría sensible.</li>
+              </ul>
+            </section>
+
+            <section id="donde">
+              <h2>3. Dónde y cómo se guardan</h2>
+              <p>
+                <strong>Datos financieros:</strong> en la base de datos SQLite
+                dentro del almacenamiento privado de la app, en tu teléfono. No
+                hay copia en la nube ni sincronización entre dispositivos en
+                esta versión. Si desinstalas la app o restableces los datos
+                desde <strong>Ajustes</strong>, esa información se elimina.
+              </p>
+              <p>
+                <strong>Datos de acceso:</strong> el correo, el identificador y
+                la sesión se gestionan con Supabase, un proveedor de
+                autenticación. La sesión también se guarda en el almacenamiento
+                local de la app para que puedas usarla sin conexión después del
+                primer acceso. Supabase puede alojar datos fuera de Colombia;
+                al usar el servicio aceptas esa transferencia internacional.
+              </p>
+              <p>
+                <strong>Datos del sitio:</strong> se sirven desde Vercel, que
+                puede mantener registros de servidor según su propia política.
+              </p>
+            </section>
+
+            <section id="finalidades">
+              <h2>4. Para qué usamos los datos</h2>
+              <ul>
+                <li>Enviarte el código de acceso y verificar tu identidad.</li>
+                <li>Mantener tu sesión y permitir el uso sin conexión.</li>
+                <li>Asociar los datos locales a la cuenta que inició sesión.</li>
+                <li>Responder solicitudes de soporte o privacidad.</li>
+                <li>Prevenir abuso, fraude o accesos no autorizados.</li>
+                <li>Cumplir obligaciones legales cuando corresponda.</li>
+              </ul>
+              <p>
+                No usamos tus datos para publicidad, perfilamiento comercial ni
+                venta a terceros. La base legal es tu consentimiento al crear la
+                cuenta y la ejecución del servicio de acceso.
+              </p>
+            </section>
+
+            <section id="terceros">
+              <h2>5. Terceros que intervienen</h2>
+              <ul>
+                <li>
+                  <strong>Supabase</strong> para autenticación por correo y
+                  gestión de la sesión.
+                  <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Supabase</a>.
+                </li>
+                <li>
+                  <strong>Vercel</strong> para alojar este sitio y entregar el
+                  archivo de descarga.
+                  <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Política de privacidad de Vercel</a>.
+                </li>
+              </ul>
+              <p>
+                No integramos bancos, pasarelas de pago, redes publicitarias ni
+                servicios de analítica. Si en el futuro se agrega el espacio
+                <strong>Hogar</strong> o sincronización, esta política se
+                actualizará antes de activar esas funciones.
+              </p>
+            </section>
+
+            <section id="seguridad">
+              <h2>6. Seguridad</h2>
+              <p>
+                Las comunicaciones con Supabase y con este sitio viajan mediante
+                HTTPS. La sesión se guarda en el almacenamiento privado de la
+                app. No almacenamos credenciales bancarias ni números completos
+                de tarjetas.
+              </p>
+              <p>
+                <strong>Limitación importante:</strong> en esta versión la base
+                local no está cifrada. Si alguien tiene acceso físico a tu
+                teléfono desbloqueado o el dispositivo está comprometido, podría
+                ver la información. Protege tu teléfono con PIN, patrón o
+                biometría y mantén el sistema actualizado. El cifrado de la base
+                local está en la lista de próximos pasos.
+              </p>
+              <p>
+                Los respaldos JSON y CSV que exportes contienen información
+                financiera. Tú decides dónde guardarlos y con quién compartirlos.
+              </p>
+            </section>
+
+            <section id="conservacion">
+              <h2>7. Conservación</h2>
+              <ul>
+                <li>
+                  <strong>Datos locales:</strong> permanecen hasta que los
+                  borres desde la app, restablezcas los datos o desinstales la
+                  aplicación.
+                </li>
+                <li>
+                  <strong>Correo y registro de acceso:</strong> mientras tu
+                  cuenta de autenticación esté activa. Puedes solicitar su
+                  eliminación por el canal de contacto.
+                </li>
+                <li>
+                  <strong>Registros del sitio:</strong> durante el tiempo que
+                  Vercel los conserve según sus políticas de seguridad y
+                  operación.
+                </li>
+              </ul>
+              <p>
+                Si solicitas la eliminación del registro de acceso, podremos
+                conservar la información estrictamente necesaria para cumplir
+                obligaciones legales o resolver disputas.
+              </p>
+            </section>
+
+            <section id="derechos">
+              <h2>8. Tus derechos</h2>
+              <p>
+                De acuerdo con la normativa colombiana de protección de datos
+                personales, puedes conocer, actualizar, rectificar y suprimir
+                tus datos, solicitar prueba de la autorización, revocarla y
+                presentar quejas ante la Superintendencia de Industria y
+                Comercio.
+              </p>
+              <ul>
+                <li>
+                  <strong>Datos locales:</strong> puedes consultarlos,
+                  modificarlos o eliminarlos directamente desde la app y desde
+                  <strong>Ajustes</strong>.
+                </li>
+                <li>
+                  <strong>Correo y registro de acceso:</strong> puedes solicitar
+                  su eliminación o corrección mediante el canal de contacto de
+                  esta política.
+                </li>
+                <li>
+                  También puedes presentar una reclamación ante la
+                  <a href="https://www.sic.gov.co/" target="_blank" rel="noopener noreferrer">Superintendencia de Industria y Comercio</a>.
+                </li>
+              </ul>
+            </section>
+
+            <section id="menores">
+              <h2>9. Menores de edad</h2>
+              <p>
+                Deuda Clara no está dirigida a menores de 18 años. No recopilamos
+                conscientemente datos de menores. Si detectamos una cuenta de un
+                menor, podremos eliminarla junto con su registro de acceso.
+              </p>
+            </section>
+
+            <section id="cambios">
+              <h2>10. Cambios en esta política</h2>
+              <p>
+                Podemos actualizar esta política cuando cambien las funciones de
+                la app o los proveedores. La fecha de la última actualización
+                aparece al inicio de la página. Si un cambio es importante, lo
+                comunicaremos en la app o en este sitio antes de aplicarlo.
+              </p>
+            </section>
+
+            <section id="contacto">
+              <h2>11. Contacto</h2>
+              <p>
+                Para preguntas sobre privacidad, solicitudes de eliminación del
+                registro de acceso o ejercicio de derechos, escribe al correo
+                de contacto del responsable.
+              </p>
+              <div class="contact-card" data-contact-block hidden>
+                <span>Correo de contacto</span>
+                <a data-contact-email href="#">
+                  <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+                  Correo de contacto
+                </a>
+              </div>
+              <p class="legal-note" data-contact-fallback>
+                El canal de contacto estará disponible cuando se publique la
+                primera versión. Mientras tanto, puedes eliminar tus datos
+                locales desde <strong>Ajustes</strong> en la app.
+              </p>
+              <p class="legal-note">
+                Esta política describe la versión 1.0.0 de Deuda Clara. Los
+                datos financieros se quedan en tu dispositivo; el correo se usa
+                solo para el acceso. Si más adelante se habilita sincronización
+                o el espacio Hogar, la política se actualizará antes de tratar
+                datos adicionales.
+              </p>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="./" aria-label="Deuda Clara, ir al inicio">
+              <img src="assets/icon-192.png" alt="" width="192" height="192" />
+              <span class="brand-copy">
+                Deuda Clara
+                <small>Finanzas sin ruido</small>
+              </span>
+            </a>
+            <p>
+              Una app local-first para ordenar tus deudas en Colombia. Menos
+              ruido, más claridad y un plan que sí puedes seguir.
+            </p>
+            <span class="footer-status">
+              <span class="dot"></span>
+              Versión <span data-version>1.0.0</span> · Android
+            </span>
+          </div>
+
+          <nav class="footer-col" aria-label="Explorar">
+            <h3>Explorar</h3>
+            <ul>
+              <li><a href="./#funciones">Funciones</a></li>
+              <li><a href="./#como-funciona">Cómo funciona</a></li>
+              <li><a href="./#privacidad">Privacidad</a></li>
+              <li><a href="./#preguntas">Preguntas</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-col" aria-label="La app y legal">
+            <h3>La app</h3>
+            <ul>
+              <li><a href="./#descargar">Descargar APK</a></li>
+              <li><a href="privacidad.html">Política de privacidad</a></li>
+              <li data-contact-block hidden>
+                <a data-contact-email href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-legal">
+            Deuda Clara es una herramienta de organización personal y
+            educativa. No es asesoría financiera, crediticia ni tributaria, y
+            no sustituye la orientación de una entidad financiera. Los cálculos
+            dependen de los datos que registres. Este sitio no usa cookies de
+            rastreo ni analítica de terceros.
+          </p>
+          <p class="footer-copy">
+            © <span data-year>2026</span> Deuda Clara
+            <span>Hecho en Colombia</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="site-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

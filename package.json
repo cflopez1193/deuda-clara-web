@@ -1,0 +1,14 @@
+{
+  "name": "deuda-clara-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing estática de Deuda Clara, sin dependencias",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
