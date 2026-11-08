@@ -1,37 +1,16 @@
 # Carpeta de descargas
 
-Coloca aquí el archivo:
+El APK se distribuye directamente desde GitHub Releases:
 
-```text
-deuda-clara.apk.zip
-```
+https://github.com/cflopez1193/deuda-clara-web/releases/download/v1.0.0/deuda-clara.apk
 
-Debe ser un ZIP que contenga el APK en la raíz, por ejemplo:
+La landing configura `apkUrl` con esa URL absoluta y `apkAvailable: true`.
 
-```text
-deuda-clara.apk.zip
-└── deuda-clara.apk
-```
+## Si necesitas regenerar el APK
 
-## Crear el ZIP
+1. Construir con EAS: `npx eas-cli@latest build --platform android --profile preview`
+2. Subir el APK a una nueva Release de GitHub
+3. Actualizar `apkUrl`, `apkSize` y `sha256` en `site-config.js`
+4. Hacer push y redeploy en Vercel
 
-```bash
-cd deuda-clara-web/descargas
-cp /ruta/al/deuda-clara.apk .
-zip -9 deuda-clara.apk.zip deuda-clara.apk
-rm deuda-clara.apk
-```
-
-## Comprobar
-
-```bash
-ls -lh deuda-clara.apk.zip
-unzip -l deuda-clara.apk.zip
-sha256sum deuda-clara.apk.zip
-```
-
-Si el ZIP pesa más de 100 MB, no lo subas a Vercel: publícalo en una Release
-de GitHub y cambia `apkUrl` y `apkAvailable` en `site-config.js`.
-
-Mientras el ZIP no esté presente, la landing mostrará **“APK en preparación”**.
-Ese es el comportamiento intencional para no ofrecer una descarga rota.
+Mientras no haya un APK disponible, la landing muestra **"APK en preparación"**.

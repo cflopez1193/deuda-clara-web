@@ -355,7 +355,7 @@
         ).toLowerCase();
 
         if (contentType.indexOf("text/html") !== -1) {
-          throw new Error("La ruta devolvió HTML en lugar del ZIP");
+          throw new Error("La ruta devolvió HTML en lugar del APK");
         }
 
         var headerLength = Number(response.headers.get("content-length"));
