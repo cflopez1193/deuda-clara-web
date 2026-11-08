@@ -22,10 +22,10 @@ window.DEUDA_CLARA_SITE = {
    * Tamaño opcional, en bytes o como texto ("12,4 MB"). Si se deja vacío,
    * se usa el tamaño que devuelva el servidor en la comprobación HEAD.
    */
-  apkSize: null,
+  apkSize: 40836208,
 
   /** SHA-256 opcional del ZIP. Si se define, aparece en un desplegable. */
-  sha256: "",
+  sha256: "a104bdcb2019df8e4c1b93755718f78294f4bc26fc7915cff930a5c9dabaf198",
 
   /**
    * Correo de contacto para privacidad y soporte. Déjalo vacío hasta tener
