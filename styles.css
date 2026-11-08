@@ -1466,6 +1466,10 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   grid-column: span 4;
 }
 
+.span-12 {
+  grid-column: span 12;
+}
+
 .feature-icon {
   display: grid;
   place-items: center;
@@ -1815,6 +1819,144 @@ html[data-theme="dark"] .theme-toggle .icon-moon {
   letter-spacing: -0.01em;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.widget-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 380px);
+  align-items: center;
+  column-gap: clamp(24px, 5vw, 64px);
+}
+
+.widget-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.widget-card .feature-visual {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.widget-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid #1e302c;
+  border-radius: 18px;
+  background: #07110f;
+}
+
+.widget-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.widget-brand {
+  display: block;
+  color: #4fd1ae;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.widget-total {
+  display: block;
+  margin-top: 2px;
+  color: #eaf5f1;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.widget-open {
+  align-self: flex-start;
+  padding: 4px 9px;
+  border-radius: 8px;
+  background: #123a31;
+  color: #4fd1ae;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.widget-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.widget-actions span {
+  padding: 9px 0;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.widget-actions .is-expense {
+  background: #3d1e1c;
+  color: #ff8d86;
+}
+
+.widget-actions .is-income {
+  background: #123a31;
+  color: #5ad3a9;
+}
+
+.widget-actions .is-credit {
+  background: #352713;
+  color: #f1b75c;
+}
+
+.widget-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 9px;
+  border: 1px solid #1e302c;
+  border-radius: 8px;
+  background: #0d1b18;
+  color: #eaf5f1;
+  font-size: 9.5px;
+  font-weight: 650;
+}
+
+.widget-row strong {
+  color: #8fa19b;
+  font-size: 9px;
+}
+
+.widget-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.widget-dot.is-coral {
+  background: #e76f51;
+}
+
+.widget-dot.is-teal {
+  background: #2a9d8f;
+}
+
+@media (max-width: 720px) {
+  .widget-card {
+    grid-template-columns: 1fr;
+  }
+
+  .widget-card .feature-visual {
+    max-width: 420px;
+  }
 }
 
 /* --------------------------------------------------------------------------

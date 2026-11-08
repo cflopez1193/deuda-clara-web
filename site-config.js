@@ -6,10 +6,10 @@
  */
 window.DEUDA_CLARA_SITE = {
   /** Versión que se muestra en la página y en los metadatos. */
-  version: "1.3.0",
+  version: "1.4.0",
 
-  /** Ruta del ZIP con el APK dentro del sitio (o una URL absoluta). */
-  apkUrl: "https://github.com/cflopez1193/deuda-clara-web/releases/download/v1.3.0/deuda-clara.apk",
+  /** URL directa del APK (GitHub Releases o archivo dentro del sitio). */
+  apkUrl: "https://github.com/cflopez1193/deuda-clara-web/releases/download/v1.4.0/deuda-clara.apk",
 
   /**
    * "auto": comprueba con una petición HEAD si el archivo ya existe.
@@ -22,10 +22,10 @@ window.DEUDA_CLARA_SITE = {
    * Tamaño opcional, en bytes o como texto ("12,4 MB"). Si se deja vacío,
    * se usa el tamaño que devuelva el servidor en la comprobación HEAD.
    */
-  apkSize: 102272925,
+  apkSize: 102581659,
 
-  /** SHA-256 opcional del ZIP. Si se define, aparece en un desplegable. */
-  sha256: "024564d4d5d2d0a934ad450702a4ef4b250043a78c9e39d428db8dc2689e7e1f",
+  /** SHA-256 opcional del APK. Si se define, aparece en un desplegable. */
+  sha256: "6cb349c00dc5da2448a6ee4f9b4303ef17933a6faa83d81dbf849066f3ed8136",
 
   /**
    * Correo de contacto para privacidad y soporte. Déjalo vacío hasta tener

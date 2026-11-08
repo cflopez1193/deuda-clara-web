@@ -6,7 +6,7 @@
     <title>Deuda Clara — Tus deudas, con claridad</title>
     <meta
       name="description"
-      content="Deuda Clara es una app para Android que te ayuda a registrar tus deudas, entender cuánto puedes abonar y seguir un plan de pago. Tus datos financieros se quedan en tu teléfono. Descarga el APK."
+      content="Deuda Clara es una app para Android que te ayuda a registrar tus deudas, entender cuánto puedes abonar y seguir un plan de pago. Widget de pantalla de inicio para anotar gastos, ingresos y créditos en segundos. Tus datos financieros se quedan en tu teléfono. Descarga el APK."
     />
     <meta name="author" content="Deuda Clara" />
     <meta name="theme-color" content="#07110F" />
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Deuda Clara — Tus deudas, con claridad" />
     <meta
       property="og:description"
-      content="Registra tus deudas, entiende tu panorama y sigue un plan de pago real. App Android local-first, en pesos colombianos."
+      content="Registra tus deudas, entiende tu panorama y sigue un plan de pago real. Widget de inicio para gastos, ingresos y crédito rápido. App Android local-first, en pesos colombianos."
     />
     <meta property="og:image" content="assets/icon-512.png" />
     <meta property="og:image:alt" content="Icono de Deuda Clara" />
@@ -26,7 +26,7 @@
     <meta name="twitter:title" content="Deuda Clara — Tus deudas, con claridad" />
     <meta
       name="twitter:description"
-      content="Registra tus deudas, entiende tu panorama y sigue un plan de pago real. App Android local-first, en pesos colombianos."
+      content="Registra tus deudas, entiende tu panorama y sigue un plan de pago real. Widget de inicio para gastos, ingresos y crédito rápido. App Android local-first, en pesos colombianos."
     />
     <meta name="twitter:image" content="assets/icon-512.png" />
 
@@ -591,7 +591,7 @@
             </ul>
             <span class="hero-release">
               <span class="dot"></span>
-              Versión <span data-version>1.3.0</span> · Primera versión para Android
+              Versión <span data-version>1.4.0</span> · Ahora con widget de inicio
             </span>
           </div>
 
@@ -803,7 +803,7 @@
             <p class="kicker">Todo en un solo lugar</p>
             <h2>Tu dinero, en orden.<br />Tus deudas, con <em>plan.</em></h2>
             <p>
-              Cinco herramientas simples para pasar de la preocupación a una
+              Seis herramientas simples para pasar de la preocupación a una
               decisión concreta. Sin hojas de cálculo interminables.
             </p>
           </div>
@@ -952,6 +952,42 @@
                 </div>
               </div>
             </article>
+
+            <article class="feature-card span-12 widget-card">
+              <div class="widget-card-copy">
+                <span class="feature-icon">
+                  <svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg>
+                </span>
+                <h3>Gasto, ingreso y crédito desde tu pantalla de inicio</h3>
+                <p>
+                  Agrega el widget de Deuda Clara y registra lo importante sin
+                  abrir la app. Toca un prestamista para sumarle un crédito al
+                  saldo, o entra a registrarlo si todavía no existe.
+                </p>
+              </div>
+              <div class="feature-visual widget-visual" aria-hidden="true">
+                <div class="widget-top">
+                  <div>
+                    <span class="widget-brand">DEUDA CLARA</span>
+                    <strong class="widget-total">$ 1.250.000</strong>
+                  </div>
+                  <span class="widget-open">Abrir</span>
+                </div>
+                <div class="widget-actions">
+                  <span class="is-expense">Gasto</span>
+                  <span class="is-income">Ingreso</span>
+                  <span class="is-credit">Crédito</span>
+                </div>
+                <div class="widget-row">
+                  <span><i class="widget-dot is-coral"></i>Mamá</span>
+                  <strong>$ 120.000</strong>
+                </div>
+                <div class="widget-row">
+                  <span><i class="widget-dot is-teal"></i>Microcrédito</span>
+                  <strong>$ 1.125.000</strong>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -1085,7 +1121,7 @@
               </p>
 
               <div class="download-meta">
-                <span>Versión <span data-version>1.3.0</span></span>
+                <span>Versión <span data-version>1.4.0</span></span>
                 <span>.APK · Android</span>
                 <span data-size-wrap hidden>Tamaño <span data-apk-size></span></span>
                 <span>Android</span>
@@ -1095,7 +1131,7 @@
                 <a
                   class="btn btn-dark download-button"
                   data-download
-                  href="https://github.com/cflopez1193/deuda-clara-web/releases/download/v1.0.0/deuda-clara.apk"
+                  href="https://github.com/cflopez1193/deuda-clara-web/releases/download/v1.4.0/deuda-clara.apk"
                   download="deuda-clara.apk"
                 >
                   <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
@@ -1278,6 +1314,29 @@
 
             <details class="faq-item">
               <summary>
+                ¿Deuda Clara tiene widget para la pantalla de inicio?
+                <span class="faq-icon">
+                  <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
+                </span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Sí. La versión <strong>1.4.0</strong> incluye un widget de
+                  pantalla de inicio con accesos a <strong>Gasto</strong>,
+                  <strong>Ingreso</strong> y <strong>Crédito</strong>, además del
+                  total de tus deudas y tus prestamistas.
+                </p>
+                <p>
+                  Puedes agregarlo desde Ajustes → “Añadir widget a la pantalla
+                  de inicio” o manteniendo presionado un espacio libre del
+                  escritorio y entrando a Widgets. No aparece en las
+                  notificaciones: es un widget del escritorio.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
                 ¿Por qué Android dice que es una app desconocida?
                 <span class="faq-icon">
                   <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
@@ -1389,7 +1448,7 @@
             </p>
             <span class="footer-status">
               <span class="dot"></span>
-              Versión <span data-version>1.3.0</span> · Android
+              Versión <span data-version>1.4.0</span> · Android
             </span>
           </div>
 
